@@ -1,19 +1,8 @@
 {
   "docs": {
-    "The Basics": ["getting-started"]
+    "The Basics": ["getting-started", "defining-tasks"]
   },
   "specification": {
-    "Specification": ["specification"]
-  },
-  "api": {
-    "APIs": [
-      "camel-toolformer",
-      {
-        "type": "category",
-        "label": "Toolformers",
-        "collapsed": false,
-        "items": ["camel-toolformer"]
-      }
-    ]
+    "Specification": ["protocol/beginner-friendly", "protocol/specification"]
   }
 }

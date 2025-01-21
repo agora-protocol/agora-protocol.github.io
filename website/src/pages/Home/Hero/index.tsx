@@ -38,25 +38,25 @@ function Hero() {
         <div className={styles.gridBackground}>
           <GridBackground />
         </div>
-        <div className={styles.devices}>
-          <Devices />
-        </div>
         <div className={styles.floorBackground}>
           <FloorBackground />
         </div>
       </div>
       <div className={styles.content}>
-        <Logo />
         <h1 className={styles.title}>Agora Protocol</h1>
         <h2 className={styles.subtitle}>
-          Scalable communication between agents.
+          Scalable and reliable communication between your agents.
         </h2>
         <div className={styles.buttonContainer}>
           <a href="/docs/getting-started" className={styles.primaryButton}>
             Get Started
           </a>
-          <a href="/docs/protocol" className={styles.secondaryButton}>
-            Protocol Specification
+          <a
+            href="https://huggingface.co/spaces/agora-protocol/agora-demo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.secondaryButton}>
+            HuggingFace Demo
           </a>
         </div>
       </div>

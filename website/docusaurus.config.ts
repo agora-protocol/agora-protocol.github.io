@@ -57,7 +57,7 @@ const config: Config = {
     {src: 'https://snack.expo.dev/embed.js', defer: true},
     {src: 'https://platform.twitter.com/widgets.js', async: true},
   ],
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon2.ico',
   titleDelimiter: '·',
   customFields: {
     users,
@@ -209,18 +209,17 @@ const config: Config = {
   ],
   themeConfig: {
     colorMode: {
-      defaultMode: 'light',
-      disableSwitch: false,
-      respectPrefersColorScheme: true,
+      defaultMode: 'dark',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
     },
-    /*announcementBar: {
-      id: 'new-architecture',
-      content:
-        'The New Architecture has arrived - <a target="_blank" rel="noopener noreferrer" href="/blog/2024/10/23/the-new-architecture-is-here">learn more</a>',
+    announcementBar: {
+      id: 'under-construction',
+      content: 'Website under construction -- expect breaking changes!',
       backgroundColor: '#20232a',
       textColor: '#fff',
-      isCloseable: false,
-    },*/
+      isCloseable: true,
+    },
     prism: {
       defaultLanguage: 'jsx',
       theme: require('./core/PrismTheme'),
@@ -259,14 +258,14 @@ const config: Config = {
     },
     navbar: {
       title: 'Agora Protocol',
-      logo: {
+      /*logo: {
         src: 'img/header_logo.svg',
         alt: 'Agora Protocol',
-      },
+      },*/
       style: 'dark',
       items: [
         {
-          label: 'Development',
+          label: 'Docs',
           type: 'dropdown',
           position: 'right',
           items: [
@@ -278,30 +277,25 @@ const config: Config = {
             {
               label: 'Protocol',
               type: 'doc',
-              docId: 'specification',
-            },
-            {
-              label: 'API',
-              type: 'doc',
-              docId: 'camel-toolformer',
+              docId: 'protocol/beginner-friendly',
             },
           ],
         },
-        {
+        /*{
           type: 'doc',
           docId: 'overview',
           label: 'Contributing',
           position: 'right',
           docsPluginId: 'contributing',
-        },
-        {
+        },*/
+        /*{
           type: 'doc',
           docId: 'overview',
           label: 'Community',
           position: 'right',
           docsPluginId: 'community',
-        },
-        {
+        },*/
+        /*{
           type: 'docsVersionDropdown',
           position: 'left',
           dropdownActiveClassDisabled: true,
@@ -311,6 +305,12 @@ const config: Config = {
               label: 'All versions',
             },
           ],
+        },*/
+        {
+          href: 'https://github.com/agora-protocol/python',
+          'aria-label': 'Discord server',
+          position: 'right',
+          className: 'navbar-discord-link',
         },
         {
           href: 'https://github.com/agora-protocol/python',
@@ -397,11 +397,6 @@ const config: Config = {
         //  ],
         //},
       ],
-      logo: {
-        alt: 'Meta Open Source Logo',
-        src: 'img/oss_logo.svg',
-        href: 'https://opensource.fb.com/',
-      },
       copyright,
     },
     algolia: {

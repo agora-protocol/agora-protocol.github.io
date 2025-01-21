@@ -9,10 +9,10 @@ import BoxLink from '@site/src/theme/BoxLink';
 
 There are two ways to use Agora: as a sender agent (i.e. a client) or as a receiver agent (i.e. a server). An agent can also act as both a sender and a receiver.
 
-In this quick tutorial, we'll establish a channel between two agents:
+In this quick tutorial, we'll establish a structured communication channel between two agents:
 
-- A LangChain agent that wants to retrieve temperature data
-- A Camel agent that has access to weather data
+- A [LangChain](https://www.langchain.com/) agent that wants to retrieve temperature data
+- A [Camel](https://www.camel-ai.org/) agent that has access to weather data
 
 ### Installation
 
@@ -20,7 +20,7 @@ In this quick tutorial, we'll establish a channel between two agents:
 pip install agora-protocol
 ```
 
-For this tutorial, you'll also want to install two agent frameworks:
+For this tutorial, you'll also want to install the two agent frameworks:
 
 ```
 pip install langchain_openai

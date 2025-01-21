@@ -13,63 +13,59 @@ import ThemeImage from '../components/ThemeImage';
 
 import FoxFact from './FoxFact';
 import styles from './styles.module.css';
+import Chat from '../components/Chat';
+import AutoChat from '../components/AutoChat';
+
+const codeMessageA = `{
+  "location": "London",
+  "date": "2023-01-20"
+}`;
+
+const codeMessageB = `{
+  "weather": "cloudy",
+  "precipitation": 0.53,
+  "temperature": 56
+}`;
 
 function Platforms() {
   return (
     <Section>
       <SectionTitle
-        title="Create native apps for Android, iOS, and more using React"
-        description="React Native brings the best parts of developing with React to native development. It's a best-in-class JavaScript library for building user interfaces."
+        title="An efficient and robust protocol for communication between LLM agents."
+        description={null}
       />
-      <div className={styles.platformsContainer}>
-        <div className={styles.featureContainer}>
-          <div className={styles.codeEditor}>
-            <div className={styles.codeEditorTitleContainer}>index.js</div>
-            <div className={styles.codeEditorContentContainer}>
-              <pre>
-                <span style={{color: 'var(--home-code-red)'}}>function</span>{' '}
-                <span style={{color: 'var(--home-code-purple'}}>
-                  HomeScreen
-                </span>
-                {`()`}
-                {` {`} <br />
-                <span
-                  style={{color: 'var(--home-code-red)'}}>{`  return `}</span>
-                {`(`} <br />
-                {`    <`}
-                <span style={{color: 'var(--home-code-green)'}}>View</span>
-                {`>`} <br />
-                {`      <`}
-                <span style={{color: 'var(--home-code-green)'}}>{`Text`}</span>
-                {`>`} Hello World 👋 🌍!{`</`}
-                <span style={{color: 'var(--home-code-green)'}}>{`Text`}</span>
-                {`>`}
-                <br />
-                {`    </`}
-                <span style={{color: 'var(--home-code-green)'}}>View</span>
-                {`>`} <br />
-                {`  );`} <br />
-                {`}`}
-              </pre>
-            </div>
-          </div>
-          <div className={styles.deviceContainer}>
-            <ThemeImage
-              lightSrc="/img/homepage/devices.png"
-              darkSrc="/img/homepage/devices-dark.png"
-              className={styles.devices}
-              alt="Android device and iOS device"
-            />
-          </div>
+      <div className={'row ' + styles.content}>
+        <div className={'col col--6 ' + styles.chatContainer}>
+          <p className={styles.chatTitle}>Go from this</p>
+          <AutoChat
+            messages={[
+              [
+                'me',
+                "Hi! What's the weather forecast for London on the 20th of January?",
+              ],
+              [
+                'them',
+                'Hello! The forecast is cloudy, with a 53% chance of precipitation and an average temperature of 56 °F.',
+              ],
+            ]}
+            speed={15}
+            messagePause={500}
+            resetPause={5000}
+          />
         </div>
-      </div>
-      <div className={styles.foxFactContainer}>
-        <FoxFact className={styles.fox} />
-        <p>
-          <strong>Written in JavaScript, rendered with native code.</strong>{' '}
-          React primitives render to native platform UI, meaning your app uses
-          the same native platform APIs other apps do.
-        </p>
+        <div className={'col col--6 ' + styles.chatContainer}>
+          <p className={styles.chatTitle}>To this</p>
+          <AutoChat
+            messages={[
+              ['me', codeMessageA],
+              ['them', codeMessageB],
+            ]}
+            speed={-1}
+            messagePause={1000}
+            resetPause={5000}
+            code
+          />
+        </div>
       </div>
     </Section>
   );

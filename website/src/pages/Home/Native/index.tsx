@@ -17,23 +17,51 @@ function Native() {
   return (
     <Section>
       <SectionTitle
-        title="Native development for everyone"
-        description={
-          <>
-            React Native lets you create truly native apps and doesn't
-            compromise your users' experiences. It provides a core set of
-            platform agnostic native components like <code>View</code>,{' '}
-            <code>Text</code>, and <code>Image</code> that map directly to the
-            platform's native UI building blocks.
-          </>
-        }
+        title="Free, Open Source, Decentralized"
+        description="Build agent networks that scale."
       />
-      <ThemeImage
-        lightSrc="/img/homepage/dissection.png"
-        darkSrc="/img/homepage/dissection-dark.png"
-        className={styles.flyoutIllustration}
-        alt="A React Native UI pointing out native elements like Views, ScrollViews, and more"
-      />
+      <div className={styles.cardContainer}>
+        <div className={styles.card}>
+          <ThemeImage
+            lightSrc="/img/homepage/file-based-routing.png"
+            darkSrc="/img/homepage/file-based-routing-dark.png"
+            className={styles.cardImage}
+            alt="File system with folders and files representing screens and navigation"
+          />
+          <div className={styles.cardContent}>
+            <h4 className={styles.cardTitle}>Efficient</h4>
+            <p className={styles.cardDescription}>Reduce token usage by 98%</p>
+          </div>
+        </div>
+        <div className={styles.card}>
+          <ThemeImage
+            lightSrc="/img/homepage/libraries.png"
+            darkSrc="/img/homepage/libraries-dark.png"
+            className={styles.cardImage}
+            alt="Grid of icons representing libraries, SDKs, and native code"
+          />
+          <div className={styles.cardContent}>
+            <h4 className={styles.cardTitle}>Robust</h4>
+            <p className={styles.cardDescription}>
+              Stop hoping that your LLM won't mess up.
+            </p>
+          </div>
+        </div>
+        <div className={styles.card}>
+          <ThemeImage
+            lightSrc="/img/homepage/tools.png"
+            darkSrc="/img/homepage/tools-dark.png"
+            className={styles.cardImage}
+            alt="List of developer tool toggles for debugging, performance, and more"
+          />
+          <div className={styles.cardContent}>
+            <h4 className={styles.cardTitle}>Framework-agnostic</h4>
+            <p className={styles.cardDescription}>
+              Supports any agent that can use natural language.
+            </p>
+          </div>
+        </div>
+      </div>
     </Section>
   );
 }

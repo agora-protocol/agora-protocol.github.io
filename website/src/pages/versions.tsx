@@ -24,7 +24,7 @@ const VersionItem = ({
   const versionName = version === 'next' ? 'main' : version;
 
   const isCurrentVersion = currentVersion === version;
-  const isNext = version === 'next';
+  const isNext = version === 'main';
   const isRC = version.toUpperCase().indexOf('-RC') !== -1;
 
   const latestMajorVersion = versions[0].toUpperCase().replace('-RC', '');

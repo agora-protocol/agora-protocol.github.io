@@ -1,0 +1,97 @@
+.container {
+  min-width: 100%;
+  display: block;
+  overflow: auto;
+}
+
+.imessage {
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  white-space: pre-wrap;
+  margin: 0 auto 1rem;
+  max-width: 600px;
+  height: 25em;
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.imessage .messageContainer {
+  width: 70%;
+}
+
+.imessage .messageContainer.from-me {
+  align-self: flex-end;
+}
+
+.imessage p {
+  width: 100%;
+  border-radius: 1.15rem;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.25;
+  padding: 0.5rem 0.875rem;
+  position: relative;
+  word-wrap: break-word;
+}
+
+p.from-me {
+  border-bottom-right-radius: 0;
+  background-color: rgb(6, 188, 238);
+  color: #fff;
+}
+
+p[class^="from-"] {
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+p.from-me ~ p.from-me {
+  margin: 0.25rem 0 0;
+}
+
+p.from-me ~ p.from-me:not(:last-child) {
+  margin: 0.25rem 0 0;
+}
+
+p.from-me ~ p.from-me:last-child {
+  margin-bottom: 0.5rem;
+}
+
+p.from-them {
+  border-bottom-left-radius: 0;
+  align-items: flex-start;
+  background-color: rgb(27, 27, 29);
+  color: #fff;
+}
+
+p[class^="from-"].emoji {
+  background: none;
+  font-size: 2.5rem;
+}
+
+p[class^="from-"].emoji::before {
+  content: none;
+}
+
+.no-tail::before {
+  display: none;
+}
+
+.margin-b_none {
+  margin-bottom: 0 !important;
+}
+
+.margin-b_one {
+  margin-bottom: 1rem !important;
+}
+
+.margin-t_one {
+  margin-top: 1rem !important;
+}
+
+.code {
+  white-space-collapse: preserve;
+  white-space: pre-wrap;
+  background-color: rgba(255, 255, 255, 0);
+}

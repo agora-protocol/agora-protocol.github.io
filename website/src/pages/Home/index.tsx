@@ -14,6 +14,8 @@ import Framework from './Framework';
 import Watch from './Watch';
 import Community from './Community';
 import CallToAction from './CallToAction';
+import InANutshell from './InANutshell';
+import FAQ from './FAQ';
 
 export default function Home() {
   return (
@@ -21,10 +23,9 @@ export default function Home() {
       <Hero />
       <Platforms />
       <Native />
-      <Framework />
-      <Watch />
-      <Community />
+      {/*<InANutshell />*/}
       <CallToAction />
+      <FAQ />
     </>
   );
 }

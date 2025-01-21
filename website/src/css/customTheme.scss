@@ -750,6 +750,23 @@ a[class*="tagRegular"] {
     }
   }
 
+  .navbar-discord-link {
+    &:after {
+      transition: opacity 0.2s;
+      content: "";
+      width: 24px;
+      height: 24px;
+      display: flex;
+      background-image: url("/img/discord-white-icon.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &:hover:after {
+      opacity: 0.5;
+    }
+  }
+
   .navbar__link--active:after {
     content: "";
     display: flex;

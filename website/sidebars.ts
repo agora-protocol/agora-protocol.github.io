@@ -5,7 +5,7 @@ export default {
     'The Basics': ['getting-started'],
   },
   specification: {
-    Specification: ['specification'],
+    Specification: ['protocol/beginner-friendly'],
   },
   api: {
     APIs: [

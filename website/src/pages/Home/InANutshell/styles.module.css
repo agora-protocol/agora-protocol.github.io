@@ -11,6 +11,21 @@
   max-width: calc(100% - 2rem);
 }
 
+.descriptionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.largeText {
+  font-size: 20px;
+  color: var(--home-secondary-text);
+  line-height: 150%;
+  margin-top: 1rem;
+  font-weight: normal;
+  max-width: 850px;
+}
+
 .cardContainer {
   display: grid;
   gap: 2rem;

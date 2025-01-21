@@ -1,0 +1,10 @@
+.qaQuestion {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 120%;
+}
+
+.qaAnswer {
+  font-size: 18px;
+  line-height: 120%;
+}

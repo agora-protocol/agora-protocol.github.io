@@ -135,3 +135,20 @@
     gap: 1rem;
   }
 }
+
+.content {
+  width: min(100%, 100vw);
+}
+
+.chatContainer {
+  /* Center horizontally, display vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.chatTitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+}
