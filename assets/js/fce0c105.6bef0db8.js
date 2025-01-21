@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkagora_protocol_website=self.webpackChunkagora_protocol_website||[]).push([["7105"],{3186:function(e,r,a){a.r(r),a.d(r,{default:()=>o});var s=a("4246");a("7378");let t="wrapper_jEoM",c="container_mrKL",o=function(e){let{children:r}=e;return(0,s.jsx)("div",{className:t,children:(0,s.jsx)("div",{className:c,children:r})})}}}]);
