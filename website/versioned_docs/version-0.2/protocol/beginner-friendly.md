@@ -156,4 +156,4 @@ We haven't talked about two of Agora's core features, i.e. negotiating protocols
 - You can negotiate protocols in natural language or using a specific protocol
 - Whether a query is submitted/handled using an LLM, a routine, or something entirely different, Agora's interface is the same
 
-Now that you've understood the rationale of Agora, you can either [jump straight into using it](../getting-started) or [read the formal specification](NA).
+Now that you've understood the rationale of Agora, you can either [jump straight into using it](../getting-started) or [read the formal specification](./specification.md).

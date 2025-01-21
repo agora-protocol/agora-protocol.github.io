@@ -331,17 +331,17 @@ const config: Config = {
               label: 'Guides',
               to: 'docs/getting-started',
             },
-            {
+            /*{
               label: 'Components',
               to: 'docs/components-and-apis',
             },
             {
               label: 'APIs',
               to: 'docs/accessibilityinfo',
-            },
+            },*/
           ],
         },
-        {
+        /*{
           title: 'Participate',
           items: [
             {
@@ -361,7 +361,7 @@ const config: Config = {
             //  href: 'https://stackoverflow.com/questions/tagged/react-native',
             //},
           ],
-        },
+        },*/
         {
           title: 'Find us',
           items: [
@@ -376,6 +376,10 @@ const config: Config = {
             {
               label: 'GitHub',
               href: 'https://github.com/agora-protocol/python',
+            },
+            {
+              label: 'Discord',
+              href: 'https://discord.gg/MXmfhwQ4FB',
             },
           ],
         },

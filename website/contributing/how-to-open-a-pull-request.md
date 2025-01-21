@@ -6,7 +6,6 @@ These instructions provide the step-by-step process to set up your machine to ma
 
 ## Prologue: Getting Ready
 
-You will need a few tools and dependencies in order to build and develop for React Native. These are covered as part of the [Environment Setup](/docs/environment-setup) guide under the "Building Projects with Native Code" section.
 
 In order to accept your pull request, we need you to submit a [Contributor License Agreement (CLA)](/contributing/contribution-license-agreement). You only need to do this once to work on any of Meta's open source projects. It only takes a minute, so you can do it while you wait for your dependencies to install.
 

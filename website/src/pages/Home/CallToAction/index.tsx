@@ -21,7 +21,7 @@ function CallToAction() {
           <a href="/docs/getting-started" className={styles.primaryButton}>
             Get Started
           </a>
-          <a href="/docs/environment-setup" className={styles.secondaryButton}>
+          <a href="https://discord.gg/MXmfhwQ4FB" className={styles.secondaryButton}>
             Discord
           </a>
         </div>

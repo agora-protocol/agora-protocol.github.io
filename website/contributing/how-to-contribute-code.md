@@ -9,9 +9,6 @@ Issues labeled [`help wanted`](https://github.com/facebook/react-native/issues?u
 
 ## Prerequisites
 
-:::info
-Please refer to the [Environment Setup](/docs/environment-setup) guide to setup required tools and the development environment based on the platform us use and platform which you want to develop for.
-:::
 
 ## Development Workflow
 

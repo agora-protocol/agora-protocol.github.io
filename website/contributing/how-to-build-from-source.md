@@ -8,7 +8,6 @@ You will need to build React Native from source if you want to work on a new fea
 
 ### Prerequisites
 
-To build from source, you need to have the Android SDK installed. If you followed the [Setting up the development environment](/docs/environment-setup) guide, you should already be set up.
 
 There is no need to install other tools like specific version of NDK or CMake as the Android SDK will **automatically download** whatever is needed for the build from source.
 

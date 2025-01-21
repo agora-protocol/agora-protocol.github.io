@@ -15,30 +15,6 @@
       "short_name": "Docs",
       "url": "/docs/getting-started",
       "icons": [{ "src": "img/pwa/manifest-icon-192.png", "sizes": "192x192" }]
-    },
-    {
-      "name": "Core Components",
-      "short_name": "Components",
-      "url": "/docs/components-and-apis",
-      "icons": [{ "src": "img/pwa/manifest-icon-192.png", "sizes": "192x192" }]
-    },
-    {
-      "name": "Core APIs",
-      "short_name": "APIs",
-      "url": "/docs/accessibilityinfo",
-      "icons": [{ "src": "img/pwa/manifest-icon-192.png", "sizes": "192x192" }]
-    },
-    {
-      "name": "Community",
-      "short_name": "Community",
-      "url": "/community/overview",
-      "icons": [{ "src": "img/pwa/manifest-icon-192.png", "sizes": "192x192" }]
-    },
-    {
-      "name": "Blog",
-      "short_name": "Blog",
-      "url": "/blog",
-      "icons": [{ "src": "img/pwa/manifest-icon-192.png", "sizes": "192x192" }]
     }
   ],
   "icons": [
